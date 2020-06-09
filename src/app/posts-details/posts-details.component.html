@@ -1,0 +1,23 @@
+<h1>here is the details of this post</h1>
+<div>
+  <p>user id is: {{ id }}</p>
+  <p>id of Post is: {{ userId }}</p>
+</div>
+<div class="container">
+  <textarea
+    ngDefaultControl
+    name="title"
+    [(ngModel)]="title"
+    rows="10"
+  ></textarea>
+</div>
+<div class="container">
+  <textarea
+    ngDefaultControl
+    name="body"
+    [(ngModel)]="body"
+    rows="10"
+  ></textarea>
+</div>
+
+<button (click)="updateById(id)">Click To Update</button>

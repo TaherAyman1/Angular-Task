@@ -1,0 +1,4 @@
+<div *ngFor="let post of posts ; let i = index;" class="style-posts" (click)="directToDetails(post.id)">
+  <p>My number is : {{ post.id }} , Click HERE for my details</p>
+  <button (click)="deleteById(post.id, $event, i)">Click me to delete</button>
+</div>
